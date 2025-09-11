@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Box Model & Layout CSS</title>
+    <link rel="stylesheet" href="latihan5.css" />
+  </head>
+  <body>
+    <h1>CSS Box Model, Layout, & Styling</h1>
+
+    <section>
+      <p>Visualisasi Box Model</p>
+      <div class="box-model-demo">
+        <margin-demo>
+          <border-demo>
+            <padding-demo>
+              <content-demo>CONTENT</content-demo>
+            </padding-demo>
+          </border-demo>
+        </margin-demo>
+      </div>
+      <div class="box-label">
+        <label-margin><span>Margin</span></label-margin>
+        <label-border><span>Border</span></label-border>
+        <label-padding><span>Padding</span></label-padding>
+        <label-content><span>Content</span></label-content>
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Margin</p>
+      <margin-all>Elemen ini memiliki margin 10px di semua sisi.</margin-all>
+      <div class="margin-auto">
+        Elemen ini memiliki margin auto untuk berada di tengah.
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Padding</p>
+      <div class="padding-all">
+        Elemen ini memiliki padding 20px di semua sisi.
+      </div>
+      <div class="padding-individual">
+        Elemen ini memiliki padding individual (atas: 5px, kanan: 15px, bawah:
+        10px, kiri: 20px).
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Border</p>
+      <div class="border-solid">Border Solid</div>
+      <div class="border-dashed">Border Dashed</div>
+      <div class="border-dotted">Border Dotted</div>
+      <div class="border-double">Border Double</div>
+    </section>
+
+    <section>
+      <p>Contoh Border Radius</p>
+      <div class="border-radius-demo">
+        <div class="radius-small">Radius Kecil</div>
+        <div class="radius-large">Radius Besar</div>
+        <div class="radius-circle">Circle</div>
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Box Sizing</p>
+      <div class="content-box">
+        <b>Content-box:</b> Lebar total adalah 250px + 40px padding + 10px
+        border = 300px.
+      </div>
+      <div class="border-box">
+        <b>Border-box:</b> Lebar total tetap 250px. Padding dan border termasuk
+        di dalamnya.
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Komponen Card</p>
+      <div class="card">
+        <div class="card-header">
+          <h4>Judul Card</h4>
+        </div>
+        <div class="card-body">
+          Ini adalah konten di dalam card-body. Komponen ini umum digunakan
+          dalam desain web modern.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Tombol (Buttons)</p>
+      <div class="button-demo">
+        <button class="btn-primary">Primary</button>
+        <button class="btn-outline">Outline</button>
+        <button class="btn-rounded">Rounded</button>
+      </div>
+    </section>
+
+    <section>
+      <p>Contoh Layout dengan Flexbox</p>
+      <div class="layout-demo">
+        <sidebar>
+          <h4>Menu</h4>
+          <ul>
+            <li>Beranda</li>
+            <li>Profil</li>
+            <li>Pengaturan</li>
+          </ul>
+        </sidebar>
+        <div class="main-content">
+          Ini adalah area konten utama. Lebarnya akan menyesuaikan sisa ruang
+          yang tersedia karena menggunakan `flex: 1`.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>Demo untuk Inspeksi (Developer Tools)</p>
+      <div class="inspector-demo">
+        Coba inspect elemen biru di bawah ini menggunakan Developer Tools (klik
+        kanan > Inspect) untuk melihat properti box modelnya (margin, border,
+        padding).
+        <div class="inspect-me">INSPECT ME</div>
+      </div>
+    </section>
+  </body>
+</html>

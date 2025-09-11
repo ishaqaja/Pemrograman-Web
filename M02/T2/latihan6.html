@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Layout & Positioning CSS</title>
+    <link rel="stylesheet" href="latihan6.css" />
+  </head>
+  <body>
+    <h1>Properti Layout & Positioning di CSS</h1>
+    <div class="position-box position-fixed">Fixed Box</div>
+
+    <section>
+      <h2>Properti Display</h2>
+      Ini adalah teks biasa.
+      <span class="display-inline">Display: inline</span>
+      tetap berada dalam alur teks yang sama.
+      <div class="display-block">Display: block</div>
+      <div class="display-block">Akan selalu memulai baris baru.</div>
+      Elemen
+      <div class="display-inline-block">Display:</div>
+      <div class="display-inline-block">inline-block</div>
+      berada dalam satu baris tetapi bisa memiliki lebar dan tinggi.
+      <div class="display-none">
+        Elemen ini tidak akan terlihat (display: none).
+      </div>
+    </section>
+
+    <section>
+      <h2>Properti Position</h2>
+      <h3>Static, Relative, dan Absolute</h3>
+      <div class="position-container">
+        <div class="position-box position-static">Static</div>
+        <div class="position-box position-relative">Relative</div>
+        <div class="position-box position-absolute">Absolute</div>
+      </div>
+      <h3>Sticky</h3>
+      <p>
+        Scroll ke bawah untuk melihat elemen "Sticky Header" menempel di bagian
+        atas.
+      </p>
+      <div class="position-sticky">Sticky Header</div>
+      <div
+        style="
+          height: 300px;
+          background: #f0f0f0;
+          padding: 10px;
+          border-radius: 8px;
+        "
+      >
+        Konten tambahan untuk scrolling.
+      </div>
+    </section>
+
+    <section>
+      <h2>Properti Float & Clear</h2>
+      <div class="float-container">
+        <div class="float-left">Float Left</div>
+        <div class="float-right">Float Right</div>
+        <p>
+          Teks ini akan mengelilingi elemen yang di-float. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Float sangat berguna untuk layout
+          berbasis kolom atau untuk menempatkan gambar di samping teks.
+        </p>
+        <div class="clear-both"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Properti Overflow</h2>
+      <h3>Overflow: visible (default)</h3>
+      <div class="overflow-container overflow-visible">
+        <div class="overflow-content">
+          Konten ini lebih besar dari containernya dan akan terlihat keluar.
+        </div>
+      </div>
+      <h3>Overflow: hidden</h3>
+      <div class="overflow-container overflow-hidden">
+        <div class="overflow-content">
+          Konten yang keluar akan dipotong dan disembunyikan.
+        </div>
+      </div>
+      <h3>Overflow: scroll</h3>
+      <div class="overflow-container overflow-scroll">
+        <div class="overflow-content">
+          Akan selalu ada scrollbar, baik vertikal maupun horizontal.
+        </div>
+      </div>
+      <h3>Overflow: auto</h3>
+      <div class="overflow-container overflow-auto">
+        <div class="overflow-content">
+          Scrollbar hanya akan muncul jika kontennya memang lebih besar.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Properti Z-Index</h2>
+      <p>
+        Z-index menentukan urutan tumpukan elemen. Angka yang lebih tinggi akan
+        berada di atas.
+      </p>
+      <div class="z-index-container">
+        <div class="z-index-1">Z-Index: 1</div>
+        <div class="z-index-2">Z-Index: 2</div>
+        <div class="z-index-3">Z-Index: 3</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Layout dengan Flexbox</h2>
+      <h3>Flex Container Dasar</h3>
+      <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+      <h3>Flex Direction: Column</h3>
+      <div class="flex-container flex-column">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>
+      <h3>Justify Content</h3>
+      <div class="flex-container justify-center">
+        <div class="flex-item">Center</div>
+        <div class="flex-item">Center</div>
+      </div>
+      <div class="flex-container justify-between">
+        <div class="flex-item">Between</div>
+        <div class="flex-item">Between</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contoh Layout Halaman</h2>
+      <h3>Layout Kolom (Responsive)</h3>
+      <p>
+        Coba ubah ukuran browser Anda untuk melihat kolom-kolom ini bertumpuk
+        menjadi satu kolom.
+      </p>
+      <div class="two-column">
+        <div class="column-left">Kolom Kiri</div>
+        <div class="column-right">Kolom Kanan</div>
+      </div>
+      <div class="three-column">
+        <div class="column">Kolom 1</div>
+        <div class="column">Kolom 2</div>
+        <div class="column">Kolom 3</div>
+      </div>
+
+      <h3>Struktur Halaman Sederhana</h3>
+      <div class="page-layout">
+        <header class="page-header">Header Halaman</header>
+        <main class="page-content">Ini adalah area konten utama halaman.</main>
+        <footer class="page-footer">Footer Halaman</footer>
+      </div>
+    </section>
+  </body>
+</html>

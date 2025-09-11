@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Warna & Background CSS</title>
+    <link rel="stylesheet" href="latihan4.css" />
+  </head>
+  <body>
+    <h1>Properti Warna & Latar Belakang di CSS</h1>
+
+    <div class="section">
+      <h2>Warna Teks (Text Color)</h2>
+      <p class="color-name">Warna menggunakan nama (red).</p>
+      <p class="color-hex">Warna menggunakan kode HEX (#3498db).</p>
+      <p class="color-rgb">Warna menggunakan kode RGB (rgb(231, 76, 60)).</p>
+      <p class="color-rgba">
+        Warna menggunakan kode RGBA dengan transparansi (rgba(46, 204, 113,
+        0.8)).
+      </p>
+      <p class="color-hsl">Warna menggunakan kode HSL (hsl(291, 64%, 42%)).</p>
+    </div>
+
+    <div class="section">
+      <h2>Warna Latar Belakang (Background Color)</h2>
+      <div class="bg-solid">Latar belakang dengan warna solid.</div>
+      <div class="bg-transparent">
+        Latar belakang dengan warna transparan (RGBA).
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Gambar Latar Belakang (Background Image & Position)</h2>
+      <div class="bg-image-url">
+        Gambar latar belakang dengan `background-size: cover`.
+      </div>
+      <p><b>Contoh Background Position:</b></p>
+      <div class="bg-position-center">Posisi gambar di tengah (center).</div>
+      <div class="bg-position-top-right">
+        Posisi gambar di kanan atas (top right).
+      </div>
+      <div class="bg-position-custom">Posisi gambar kustom (30% 70%).</div>
+      <p><b>Contoh Background Repeat:</b></p>
+      <div class="bg-image-pattern">
+        Latar belakang pola yang diulang (repeat).
+      </div>
+      <div class="bg-image-no-repeat">
+        Gambar latar belakang tanpa pengulangan (no-repeat).
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Latar Belakang Gradien (Gradient Backgrounds)</h2>
+      <div class="bg-gradient-linear">Gradien Linear (Linear Gradient).</div>
+      <div class="bg-gradient-radial">Gradien Radial (Radial Gradient).</div>
+      <div class="bg-gradient-multiple">
+        Gradien Ganda (Multiple Gradients).
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Skema Warna (Color Scheme)</h2>
+      <div class="color-scheme">
+        <div class="scheme-primary">Primary</div>
+        <div class="scheme-secondary">Secondary</div>
+        <div class="scheme-success">Success</div>
+        <div class="scheme-warning">Warning</div>
+        <div class="scheme-danger">Danger</div>
+        <div class="scheme-info">Info</div>
+        <div class="scheme-light">Light</div>
+        <div class="scheme-dark">Dark</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Efek Lanjutan</h2>
+      <div class="border-color">Elemen dengan border gradien.</div>
+      <div class="text-gradient">Teks dengan warna gradien.</div>
+      <div class="bg-multiple">
+        Beberapa Latar Belakang (pola SVG di atas gradien).
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Background Attachment</h2>
+      <div class="bg-attachment-scroll">
+        <p><b>Attachment: scroll (default)</b></p>
+        <p>
+          Latar belakang pada elemen ini akan ikut bergulir (scroll) bersama
+          halaman. Coba scroll halaman ini untuk melihat perbedaannya dengan
+          contoh di bawah.
+        </p>
+      </div>
+      <div class="bg-attachment-fixed">
+        <p><b>Attachment: fixed</b></p>
+        <p>
+          Latar belakang gambar pada elemen ini akan tetap diam di posisinya
+          saat halaman di-scroll, menciptakan efek parallax.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
