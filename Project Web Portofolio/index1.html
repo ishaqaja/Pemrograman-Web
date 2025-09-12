@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portofolio — Muhammad Ishaq</title>
+    <meta
+      name="description"
+      content="Portofolio kreatif Muhammad Ishaq — proyek, keterampilan, kontak."
+    />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">Muhammad Ishaq</a>
+        <nav class="nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="cta"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+        >
+          Hire me
+        </button>
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          ☰
+        </button>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" hidden>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1 id="hero-title">
+              Halo — aku <span class="accent"> Muhammad Ishaq</span>
+            </h1>
+            <p class="lead">
+              Aku membangun produk digital yang sederhana, bermakna, dan
+              estetis. Fokusku: UI/UX, web interaktif, dan solusi fungsional
+              yang elegan.
+            </p>
+            <p class="hero-actions">
+              <a class="btn primary" href="#projects">Lihat Proyek</a>
+              <a class="btn ghost" href="#contact">Kontak</a>
+            </p>
+            <ul class="quick-stats" aria-hidden="true">
+              <li><strong>8+</strong> proyek selesai</li>
+              <li><strong>5</strong> bidang keahlian</li>
+              <li><strong>100%</strong> growth mindset</li>
+            </ul>
+          </div>
+
+          <!-- FOTO PROFIL -->
+          <div class="hero-photo">
+            <img src="images/fotoku.jpg" alt="Foto Muhammad Ishaq" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Aku percaya pada proses: pengamatan, refleksi, eksperimen. Dalam
+                setiap proyek aku berusaha menghadirkan keseimbangan antara
+                fungsi dan keindahan — produk yang menyelesaikan masalah nyata
+                dan memberi pengalaman yang tenang.
+              </p>
+              <p>
+                Senang bekerja kolaboratif, cepat beradaptasi, dan selalu ingin
+                belajar hal baru.
+              </p>
+              <p>
+                <strong>Availability:</strong> Terbuka untuk freelance &
+                kolaborasi.
+              </p>
+            </div>
+
+            <!-- Card styling ulang -->
+            <div class="about-card">
+              <ul class="meta-list fancy-meta">
+                <li>
+                  <strong>Email:</strong>
+                  <a href="mailto:hello@Ishaq.id">hello@Ishaq.id</a>
+                </li>
+                <li><strong>Lokasi:</strong> Indonesia</li>
+                <li><strong>Peran:</strong> UI/UX Solution</li>
+              </ul>
+              <a class="btn chat-btn" href="#contact">💬 Ajak ngobrol</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Projects</h2>
+          <p class="muted">
+            Beberapa contoh pekerjaan yang menonjol — klik untuk detail.
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project item -->
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="images\gambar1.png" alt="Dashboard Analytics" />
+              </div>
+              <div class="project-body">
+                <h3>Dashboard Analytics</h3>
+                <p class="muted small">Web app • UI, Data Viz</p>
+                <p class="project-desc">
+                  Menyederhanakan data kompleks jadi insight yang mudah dicerna.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn detail-btn">Detail ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="images\gambar2.jpeg" alt="Landing Page Produk" />
+              </div>
+              <div class="project-body">
+                <h3>Landing Page Produk</h3>
+                <p class="muted small">Marketing • Performance</p>
+                <p class="project-desc">
+                  Desain konversi tinggi, loading cepat, dan mobile-first.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn detail-btn">Detail ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="images\gambar3.png" alt="Aplikasi Pembelajaran" />
+              </div>
+              <div class="project-body">
+                <h3>Aplikasi Pembelajaran</h3>
+                <p class="muted small">EdTech • UX Research</p>
+                <p class="project-desc">
+                  Fokus pada engagement dan retention lewat micro-interactions.
+                </p>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn detail-btn">Detail ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section alt" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-icon">💻</div>
+              <h4>Frontend</h4>
+              <p class="muted small">HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill">
+              <div class="skill-icon">🎨</div>
+              <h4>Design</h4>
+              <p class="muted small">UI/UX, Figma, Prototyping</p>
+            </div>
+            <div class="skill">
+              <div class="skill-icon">📊</div>
+              <h4>Data</h4>
+              <p class="muted small">Visualisasi & Analisis</p>
+            </div>
+            <div class="skill">
+              <div class="skill-icon">🧩</div>
+              <h4>Problem Solving</h4>
+              <p class="muted small">Product thinking & sistematis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <div class="contact-grid">
+            <form
+              class="contact-form"
+              action="mailto:hello@Muhammad Ishaq.id"
+              method="post"
+              enctype="text/plain"
+            >
+              <label for="name">Nama</label>
+              <input id="name" name="name" required placeholder="Namamu..." />
+
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="email@domain.com"
+              />
+
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Apa yang ingin dibicarakan?"
+              ></textarea>
+
+              <div class="form-actions">
+                <button type="submit" class="btn primary">Kirim</button>
+                <button type="reset" class="btn ghost">Reset</button>
+              </div>
+            </form>
+
+            <aside class="contact-info">
+              <h3>Langkah selanjutnya</h3>
+              <p class="muted">
+                Kirim pesan singkat, sertakan link contoh kerja atau
+                requirement. Aku akan merespons dengan proposal singkat.
+              </p>
+              <ul class="meta-list">
+                <li><strong>Waktu respon:</strong> 1–3 hari kerja</li>
+                <li><strong>Rate:</strong> 4.9✨</li>
+                <li>
+                  <strong>Chat:</strong>
+                  <a href="https://wa.me/628123456789">WhatsApp</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Muhammad Ishaq. All rights reserved.</p>
+        <p class="muted">Designed with clarity & care.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        document.getElementById("year").textContent = new Date().getFullYear();
+        const toggle = document.getElementById("menu-toggle");
+        const mobileNav = document.getElementById("mobile-nav");
+        toggle.addEventListener("click", function () {
+          const open = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", String(!open));
+          mobileNav.hidden = open;
+        });
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+          a.addEventListener("click", function (e) {
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
