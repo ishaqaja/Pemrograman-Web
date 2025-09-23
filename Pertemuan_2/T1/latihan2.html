@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contoh Selector CSS Lengkap</title>
+    <link rel="stylesheet" href="latihan2.css" />
   </head>
   <body>
-    <!-- heading dari h1 sampai h6 -->
-    <h1>ini adalah Heading 1 (judul utama)</h1>
-    <h2>ini adalah Heading 2 (sub Judul)</h2>
-    <h3>ini adalah Heading 3</h3>
-    <h4>ini adalah Heading 4</h4>
-    <h5>ini adalah Heading 5</h5>
-    <h6>ini adalah Heading 6</h6>
+    <h1>Contoh Berbagai Macam Selector CSS</h1>
 
-    <!-- contoh penggunaan heading dalam struktur dokument -->
-    <h1>bab 1 pengenalan web</h1>
-    <h2>1.1 apa itu html</h2>
-    <h3>definisi html</h3>
-    <h3>sejarah html</h3>
-    <h2>1.2 mengapa belajar html</h2>
+    <p>Ini adalah paragraf biasa tanpa class atau id tambahan.</p>
+
+    <h4>Class Selectors</h4>
+    <p class="highlight">
+      Paragraf ini menggunakan class 'highlight' untuk menyorot teks.
+    </p>
+    <div class="warning">
+      Div ini menggunakan class 'warning' untuk menampilkan pesan peringatan.
+    </div>
+    <p class="warning border">
+      Paragraf ini menggabungkan class 'warning' dan 'border'.
+    </p>
+
+    <h5>ID Selector</h5>
+    <p id="special">
+      Paragraf ini sangat spesial dan menggunakan ID 'special'.
+    </p>
+
+    <h6>Descendant & Pseudo-Element Selectors</h6>
+    <div class="container">
+      <h2>Judul di dalam .container</h2>
+      <p>Paragraf ini adalah turunan (descendant) langsung dari .container.</p>
+      <div class="inner">
+        <p>
+          Paragraf ini berada di dalam .inner yang juga di dalam .container,
+          sehingga gayanya lebih spesifik.
+        </p>
+      </div>
+    </div>
+
+    <h4>Child Selector</h4>
+    <ul class="menu">
+      <li>Item Menu Level 1</li>
+      <li>
+        Item Menu Level 1
+        <ul>
+          <li>Sub-item Level 2</li>
+          <li>Sub-item Level 2</li>
+        </ul>
+      </li>
+      <li>Item Menu Level 1</li>
+    </ul>
+
+    <h5>Pseudo-Class Selector</h5>
+    <div class="links">
+      <a href="#hover">Link (arahkan kursor ke sini)</a>
+      <a href="#visited">Link yang sudah dikunjungi</a>
+      <a href="#active">Link (klik dan tahan)</a>
+    </div>
+
+    <h6>Attribute Selector & Button</h6>
+    <form>
+      <input type="text" placeholder="Input tipe text" />
+      <input type="email" placeholder="Input tipe email" />
+      <input type="password" placeholder="Input tipe password" />
+      <button type="button">Ini Tombol</button>
+    </form>
   </body>
 </html>
