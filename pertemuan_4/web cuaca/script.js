@@ -64,7 +64,7 @@ document.getElementById("cuacaForm").addEventListener("submit", function (e) {
   if (kota && dataCuaca[kota]) {
     const cuaca = dataCuaca[kota];
 
-    namaKota.textContent = `🌍 ${kota}`;
+    namaKota.textContent = `🏙️ ${kota}`;
     deskripsi.textContent = cuaca.deskripsi;
     suhu.textContent = cuaca.suhu;
     ikonCuaca.src = cuaca.ikon;

@@ -1,31 +1,45 @@
-JS;
+console.log("Script Praktikum Dijalankan");
 
-function cekHasil() {
-  const nama = document.getElementById("nama").value;
-  const nilai = parseInt(document.getElementById("nilai").value);
-  const output = document.getElementById("output");
+// Variabel untuk menangkap elemen dari HTML
+const elNama = document.getElementById("nama-mhs");
+const elNilai = document.getElementById("nilai-mhs");
+const elStatus = document.getElementById("status-kelulusan");
 
-  if (nama === "" || isNaN(nilai)) {
-    output.textContent = "⚠ Silakan isi nama dan nilai dengan benar.";
-    output.style.color = "red";
-    console.log("Input tidak valid.");
-    return;
-  }
+// Mengambil input elemen
+const inputNama = document.getElementById("input-nama");
+const inputNilai = document.getElementById("input-nilai");
 
-  // Logika penilaian
-  if (nilai >= 90) {
-    output.textContent = nama + ", nilai kamu " + nilai + " → Grade A 🎉";
-    output.style.color = "green";
-  } else if (nilai >= 75) {
-    output.textContent = nama + ", nilai kamu " + nilai + " → Grade B 👍";
-    output.style.color = "blue";
-  } else if (nilai >= 60) {
-    output.textContent = nama + ", nilai kamu " + nilai + " → Grade C 🙂";
-    output.style.color = "orange";
+// Menangani klik tombol submit
+document.getElementById("submit-btn").addEventListener("click", function () {
+  // Mendapatkan nilai input dari pengguna
+  const namaMahasiswa = inputNama.value;
+  const nilai = parseInt(inputNilai.value);
+
+  // Menampilkan Nama dan Nilai
+  elNama.textContent = namaMahasiswa;
+  elNilai.textContent = nilai;
+
+  // Logika Kelulusan (if..else)
+  let pesanStatus;
+  let isLulus;
+
+  if (nilai >= 75) {
+    pesanStatus = "Selamat, Anda Dinyatakan LULUS!";
+    isLulus = true;
   } else {
-    output.textContent = nama + ", nilai kamu " + nilai + " → Grade D ❌";
-    output.style.color = "red";
+    pesanStatus = "Tetap Semangat, Anda HARUS Mengulang.";
+    isLulus = false;
   }
 
-  console.log("Hasil cek untuk", nama, "dengan nilai:", nilai);
-}
+  // Menampilkan status kelulusan
+  elStatus.textContent = pesanStatus;
+
+  // Mengubah gaya berdasarkan status kelulusan
+  if (isLulus === true) {
+    elStatus.style.color = "green";
+    elStatus.style.fontWeight = "bold";
+  } else {
+    elStatus.style.color = "red";
+    elStatus.style.fontWeight = "bold";
+  }
+});
