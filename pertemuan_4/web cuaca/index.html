@@ -3,30 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cari Cuaca Kota</title>
+    <title>Info Cuaca Kota</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <h2>Cari Cuaca Berdasarkan Kota</h2>
-      <form id="form-cuaca">
-        <select id="kota" required>
-          <option value="" disabled selected>Pilih Kota</option>
+
+  <body
+    class="min-h-screen flex flex-col items-center justify-center p-6 bg-main text-light"
+  >
+    <div
+      class="bg-card shadow-2xl rounded-2xl p-8 w-full max-w-md text-center border border-[#A1C2BD]/40"
+    >
+      <h1 class="text-3xl font-bold text-accent mb-6 tracking-wide">
+        🌤️ Info Cuaca Kota
+      </h1>
+
+      <form id="cuacaForm" class="space-y-4">
+        <select
+          id="kota"
+          class="w-full bg-[#E7F2EF] text-[#19183B] rounded-xl p-3 font-medium border border-[#A1C2BD] focus:outline-none focus:ring-2 focus:ring-accent transition"
+        >
+          <option value="">-- Pilih Kota --</option>
           <option value="Jakarta">Jakarta</option>
           <option value="Bandung">Bandung</option>
           <option value="Surabaya">Surabaya</option>
           <option value="Medan">Medan</option>
           <option value="Yogyakarta">Yogyakarta</option>
-          <option value="Semarang">Semarang</option>
-          <option value="Denpasar">Denpasar</option>
+          <option value="Bali">Bali</option>
           <option value="Makassar">Makassar</option>
-          <option value="Balikpapan">Balikpapan</option>
           <option value="Palembang">Palembang</option>
+          <option value="Semarang">Semarang</option>
+          <option value="Malang">Malang</option>
         </select>
-        <button type="submit">Cari</button>
+
+        <button
+          type="submit"
+          class="w-full bg-[#A1C2BD] hover:bg-[#89b5a9] text-[#19183B] font-semibold py-2 rounded-xl transition duration-300 shadow-lg hover:shadow-[#A1C2BD]/40"
+        >
+          Tampilkan Cuaca
+        </button>
       </form>
-      <div id="hasil"></div>
+
+      <div
+        id="hasil"
+        class="mt-8 hidden bg-[#E7F2EF]/10 p-4 rounded-xl border border-[#A1C2BD]/30"
+      >
+        <h2 class="text-2xl font-semibold text-[#E7F2EF]" id="namaKota"></h2>
+        <p class="text-lg text-[#A1C2BD]" id="deskripsi"></p>
+        <p class="text-2xl font-bold text-accent mt-2" id="suhu"></p>
+        <img
+          id="ikonCuaca"
+          src=""
+          alt="Gambar Cuaca"
+          class="mx-auto mt-4 w-32 h-32 object-contain drop-shadow-lg"
+        />
+      </div>
     </div>
+
+    <p class="text-sm text-[#A1C2BD] mt-6 opacity-70">ishaq aja🌙</p>
 
     <script src="script.js"></script>
   </body>
