@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.bagian-kiri {
+  display: flex;
+  gap: 20px;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  height: 100%;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form input,
+.form select {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #868686;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #515151;
+}
+
+.catatan {
+  font-size: 12px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.bagian-kanan {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blok {
+  background-color: #ffffff;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info .judul {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.tabel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabel th,
+.tabel td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabel th {
+  background-color: #f0f0f0;
+}

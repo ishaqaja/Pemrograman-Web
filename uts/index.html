@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bagian-kiri">
+      <div class="blok form">
+        <h2>Input Data</h2>
+
+        <label>
+          NAMA LENGKAP:
+          <input type="text" id="input1" placeholder="Masukkan Nama" />
+        </label>
+
+        <label>
+          NIM:
+          <input type="text" id="input2" placeholder="20210001" />
+        </label>
+
+        <label>
+          SEMESTER:
+          <input type="text" id="input3" placeholder="1-8" />
+        </label>
+
+        <label>
+          PROGRAM STUDI:
+          <select id="input4">
+            <option value="">--Pilih--</option>
+            <option value="SI">SI</option>
+            <option value="TI">TI</option>
+          </select>
+        </label>
+
+        <label>
+          EMAIL:
+          <input type="email" id="input5" placeholder="email@example.com" />
+        </label>
+
+        <button onclick="kirim()" type="submit">Kirim Data</button>
+        <p class="catatan">Isi data Mahasiswa dengan benar.</p>
+      </div>
+
+      <div class="bagian-kanan">
+        <div class="blok info">
+          <h2>Informasi Pengiriman</h2>
+
+          <p class="judul">
+            Apa yang terjadi saat anda klik "Kirim Data"?
+          </p>
+          <ul>
+            <li>Data ditampilkan di console</li>
+            <li>Data disimpan di array</li>
+            <li>Jumlah data diperbarui</li>
+            <li>Form akan kosong kembali</li>
+          </ul>
+        </div>
+
+        <div class="blok tabel">
+          <h2>Table Mahasiswa</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>NO</th>
+                <th>NAMA</th>
+
+                <th colspan="2">INFO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Budi Santosi</td>
+                <td>Prodi: TI</td>
+                <td>Semester: 4</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Siti Nur Haliza</td>
+                <td>Prodi: SI</td>
+                <td>Semester: 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
