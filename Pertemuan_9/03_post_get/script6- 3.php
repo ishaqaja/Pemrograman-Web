@@ -4,7 +4,7 @@
   </head>
   <body>
     <h1>Menghitung Selisih Dua Waktu</h1>
-    <form method="post" action="script6-3proses.php">
+    <form method="post" action="script-6-3proses.php">
       <table>
         <tr><td>Waktu 1</td><td>:</td><td>
           <input type="text" name="jam1" size="3"> Jam
