@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa Baru Universitas X</h2>
+
+    <form action="proses_pendaftaran_get.php" method="get">
+        <label>Nama Lengkap:</label><br>
+        <input type="text" name="nama" required><br><br>
+
+        <label>Tempat Lahir:</label><br>
+        <input type="text" name="tempat_lahir" required><br><br>
+
+        <label>Tanggal Lahir:</label><br>
+        <select name="tgl">
+            <?php
+                for ($i = 1; $i <= 31; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                }
+            ?>
+        </select>
+
+        <select name="bln">
+            <?php
+                for ($i = 1; $i <= 12; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                }
+            ?>
+        </select>
+
+        <select name="thn">
+            <?php
+                for ($i = 1980; $i <= 2005; $i++) {
+                    echo "<option value='$i'>$i</option>";
+                }
+            ?>
+        </select><br><br>
+
+        <label>Alamat Rumah:</label><br>
+        <textarea name="alamat" rows="3" cols="30" required></textarea><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" name="jk" value="Pria" required> Pria
+        <input type="radio" name="jk" value="Wanita"> Wanita<br><br>
+
+        <label>Asal Sekolah:</label><br>
+        <input type="text" name="asal_sekolah" required><br><br>
+
+        <label>Nilai UAN:</label><br>
+        <input type="text" name="nilai_uan" required><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
