@@ -14,3 +14,4 @@ for ($x = 1; $x <= 23; $x++) {
 
 echo "<br>Total pasangan yang memenuhi = $jumlah";
 ?>
+fergfiuwegfiwegi
